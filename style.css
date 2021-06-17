@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #1e1e1e;
+  color: #fff;
+  height: 1200px;
+}
+.section-padding {
+  padding: 0 20px;
+}
+/* header */
+header {
+  text-align: center;
+}
+header form {
+  display: flex;
+  justify-content: center;
+}
+form input {
+  padding: 10px 5px;
+}
+
+/* main */
+main {
+  margin-top: 60px;
+}
+/* image details */
+.image-details {
+  text-align: center;
+  position: relative;
+  background-color: #404040;
+}
+.image-details a {
+  color: #fff;
+  font-size: 22px;
+  display: inline-block;
+}
+.image-details embed {
+  width: 50%;
+  height: 300px;
+
+  display: block;
+  margin: 0 auto;
+}
+.image-details button {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+.image-details .copyright {
+  margin-top: 0;
+}
+/* gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.gallery-item {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.gallery-item embed {
+  width: 100%;
+  height: calc(100% - 25%);
+}
+.gallery-item .overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.gallery-item:hover > .overlay {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 5px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
